@@ -1,3 +1,7 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Rax -- A radix tree implementation.
  *
  * Copyright (c) 2017-2018, Salvatore Sanfilippo <antirez at gmail dot com>
@@ -213,4 +217,9 @@ void raxSetDebugMsg(int onoff);
  * in a low level way, so this function is exported as well. */
 void raxSetData(raxNode *n, void *data);
 
+#endif
+
+
+#ifdef __cplusplus
+}
 #endif
